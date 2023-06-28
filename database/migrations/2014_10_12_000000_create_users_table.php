@@ -19,6 +19,10 @@ return new class extends Migration
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();
+            
+            # 
+            $table->integer('tg_id');
+            $table->integer('permissions')->nullable();
         });
     }
 
